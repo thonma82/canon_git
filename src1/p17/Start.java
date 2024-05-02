@@ -5,17 +5,23 @@ public class Start {
 	public static void main(String[] args) {
 		Human h;
 		
-		
-		h= new oku();
+		h = new Oku();
 		h.name = "奥";
 		h.age = 23;
 		h.eat();
-//		h.cook();
+		//h.cook();
 		
-		h= new kudo();
+		Oku o = (Oku)h;
+		o.cook();
+		
+		h = new Kudo();
 		h.name = "工藤";
-		h.age = 22;
+		h.age = 24;
 		h.eat();
-//		h.listenMusic();
+		//h.listenMusic();
+		
+		Kudo k = (Kudo)h;
+		k.listenMusic();
 	}
+
 }
